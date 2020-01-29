@@ -5,8 +5,8 @@ install:
 script:
 - cd mysite
 - npm install -g heroku
-- HEROKU_API_KEY='5cd683c8-9110-4d8c-89e2-a39191e4576a' heroku git:remote -a leopoll
-- git push heroku master
+- gem install dpl
+- dpl --provider=heroku --app=leopoll --api-key=$HEROKU_API_KEY
 env:
   global:
     secure: UHVKhGFHr1cG7iPK0F63JmnlvrBiX09cCtmuXWugxlUKcnpDccMzNY94fZ5ZIDMXQaWmJgFsA78nkp94ym0H1v21icBdYY72HhVzzXeZea5Kk5lp91Kk5vLSKmKyDuWUEMxPEUNQvi5nN5lG8f2slYkiZccRw+MlW43U65A2n4YADhUTHwhSHmhlJH+YjjVHK3kItpa/Z03pEqj89RHdDKeEYE3MDrPcJmxD3QaMKSoNXS5TMc14IPrH6trJCRhuQGaw6R2w3YPAPMoLsQJ4P0L0DBWG8/nLjknqKJSTKnnyTW9eGn32JKkUjfJsLb7mffEx6bLbbGjyrEW6o/nR+eJh7ixMrWArp9IS2SsDfyQAiklHWOVB+mdX4q0amgmYojfDwSu1UfMSNVrQGc47tgaRR4GNzOe5I828f0q+hSkIuoBXzHLg5OPGajK1rMZUN7jlbT1btA8px9Z6gGOmgnN8FAqfJfpPoPqqytoLhJVb0wiecDU8h9PNNHbp4OICcHIvWydVrxke5qOwbGyR+gYhrG/KJQ8G9KEHnSQ3s4NzgaxXBPECJms0qILPZr6nlOQ23isHukZZDUCzI4AVEaom0scWX26czJ+XUcNf5uF1yMMapItFWvbQiyDSnFEq0RQrLG5nLV+1gMvL1vO56ym9Pxrm9TNhXHZsugOQaPE=
