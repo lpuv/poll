@@ -4,9 +4,8 @@ install:
 - pip3 install -r requirements.txt
 script:
 - cd mysite
-- python3 manage.py test
 - npm install -g heroku
-- heroku git:remote -a leopoll
+- HEROKU_API_KEY='5cd683c8-9110-4d8c-89e2-a39191e4576a' heroku git:remote -a leopoll
 - git push heroku master
 env:
   global:
