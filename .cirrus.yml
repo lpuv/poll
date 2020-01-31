@@ -1,0 +1,7 @@
+container:
+  image: python:final
+
+check_task:
+  fingerprint_script: cat Pipfile.lock
+  populate_script: python3 -m pip install -r requirements.txt
+  test_script: python3 mysite/manage.py test
