@@ -6,7 +6,7 @@ django-heroku==0.3.1
 gunicorn==20.0.4
 packaging==20.1
 psycopg2==2.8.4
-psycopg2-binary==2.8.4
+psycopg2-binary==2.9.9
 py==1.8.1
 pyparsing==2.4.6
 pytest==5.3.5
